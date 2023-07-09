@@ -1,15 +1,20 @@
-# ETH_PROOF-Beginner_EVM
-# FINAL PROJECT
-//CODE EXPLANATION:
+## ETH_PROOF-Beginner_EVM
+## FINAL PROJECT
+## CODE EXPLANATION:
 
 1. **contract MyToken {**
 
 This line defines a new Solidity contract named MyToken.
 
-2. 
+2. Code:
+   
 **string public tokenName = "khushi";**
+
 **string public tokenAbbrv = "kk";**
+
 **uint public totalSupply = 0;**
+
+Explanation:
 
 These lines declare three public variables: tokenName, tokenAbbrv, and totalSupply.
 
@@ -22,10 +27,17 @@ totalSupply is an unsigned integer variable initialized to 0.
 This line declares a public mapping variable named balances. It maps addresses (of type 
 address) to unsigned integers (uint), representing the balances of each address.
 
-4. **function mint(address sender, uint value) public {**
-    **totalSupply += value;**
-    **balances[sender] += value;**
-**}**
+4. Code:
+   
+   **function mint(address sender, uint value) public {**
+
+   **totalSupply += value;**
+
+   **balances[sender] += value;**
+
+   **}**
+
+Explanation:
 
 This is a function named mint that takes two parameters: sender (an address) and value (an 
 unsigned integer). The function is defined as public, meaning it can be called from outside
@@ -34,11 +46,19 @@ the contract.
 Within the function, the totalSupply is increased by the value passed as an argument, and 
 the balance of the sender address is increased by the value.
 
-5. **function burn(address sender, uint value) public {**
-    **require(balances[sender] >= value, "Insufficient balance");**
-    **totalSupply -= value;**
-    **balances[sender] -= value;**
-**}**
+5. Code:
+   
+   **function burn(address sender, uint value) public {**
+
+   **require(balances[sender] >= value, "Insufficient balance");**
+
+   **totalSupply -= value;**
+
+   **balances[sender] -= value;**
+
+   **}**
+
+Explanation:
 
 This is a function named burn that takes two parameters: sender (an address) and value (an 
 unsigned integer). It is also defined as public.
