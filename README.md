@@ -1,4 +1,4 @@
-# MINT TOKENS AND BURN EXISTING TOKENS
+# CREATION OF A TOKEN
 
 This Solidity program provides functionality to mint new tokens and burn existing tokens, while keeping track of balances using the balances mapping. The totalSupply variable keeps track of the total supply of tokens in circulation.
 
